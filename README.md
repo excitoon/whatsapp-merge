@@ -6,8 +6,10 @@ gradle build
 
 ### How to run
 
+Data from new database shall be merged into old database (not overwriting it, but producing `output.db` in current directory). Application creates additional file `temp.db` during the process.
+
 ```
-java -jar build/libs/mymerge-1.0-SNAPSHOT.jar
+java -jar build/libs/mymerge-1.0-SNAPSHOT.jar -old old.db -new new.db
 ```
 
 ### Copying
